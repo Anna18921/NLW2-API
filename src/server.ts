@@ -13,6 +13,8 @@ const classesControllers = new ClassesController();
 const connectionController = new ConnectionsController();
 app.get("/classes", classesControllers.index);
 
+app.get("/index", classesControllers.indexList);
+
 app.post("/classes", classesControllers.create);
 
 app.get("/connections", connectionController.index);
